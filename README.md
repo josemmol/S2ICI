@@ -7,7 +7,7 @@ Aquest projecte permet desplegar els servidors dels mòduls de **Serveis de Xarx
 ## Integració continua
 ### Què és la Integració Contínua?
 
-Definició:
+Definició: La integració contínua (IC) amb Docker és una pràctica de desenvolupament de software que utilitza la tecnologia de contenidors proporcionada per Docker per automatitzar el procés de construcció, testeig i desplegament del codi font en diverses etapes del cicle de vida dels serveis.
 
 ### Beneficis de la Integració Contínua:
 
