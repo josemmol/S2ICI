@@ -211,6 +211,9 @@ docker-compose down
 
 Per aturar i eliminar contenidors i les seves imatges, utilitzau:
 
+```
+docker-compose down --rmi all
+```
 
 Aquest és un exemple bàsic, i pots personalitzar-lo en funció dels requisits de la teva aplicació.
 
