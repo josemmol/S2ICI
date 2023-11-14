@@ -55,3 +55,45 @@ Les fases de la integració contínua (IC) aprofita les característiques de con
 1. Retroalimentació i Optimització Continues:
    * Recopilació de dades i retroalimentació de la producció per a la millora contínua.
    * Optimització de l'estructura del contenidor, la configuració i els processos en funció dels resultats i les necessitats.
+
+## Control de Versions amb Git
+### Què és el Control de Versions?
+**Definició:** El control de versions és un sistema que registra els canvis en un fitxer o conjunt de fitxers al llarg del temps, de manera que es pugui accedir a versions específiques més endavant.
+
+### Beneficis del Control de Versions
+* Històric: Seguiment detallat de canvis.
+* Col·laboració: Facilita el treball en equip.
+* Seguretat: Possibilitat de restaurar 
+* Distribuït: Cada col·laborador té una còpia local de tot el projecte.
+* Ràpid: Accés local i eficient a les versions.
+* Flexible: Adaptable a diferents fluxos de treball.
+
+### Principals Conceptes de Git
+1. Repository (Repositori):
+   * Emmagatzema tota la història del projecte
+   * Pot ser local o remot (en serveidors com GitHub).
+1. Commit:
+   * Un punt en la història del projecte.
+   * Conté canvis específics en fitxers.
+1. Branch (Branca):
+   * Una línia de desenvolupament separada.
+   * Facilita el treball simultani en funcionalitats diferents.
+1. Merge (Fusionar):
+   * Combinar canvis de dues branques diferents.
+
+## Instruccions Bàsiques amb Git
+`git init`: Inicia un nou repositori a la carpeta actual.
+
+`git clone URL`: Crea una còpia local d'un repositori remot.
+
+`git add nom_fitxer`: Afegeix canvis d'un fitxer a l'àrea d'espera.
+
+`git commit -m "Missatge del commit"`:
+* Emmagatzema canvis a la història del repositori.
+* El missatge descriu els canvis realitzats.
+
+`git push origin branca`: Puja els canvis locals a una branca remota.
+
+`git pull origin branca:` Actualitza la branca local amb els canvis remots.
+
+`git merge branca:` Fusiona els canvis d'una branca a una altra.
