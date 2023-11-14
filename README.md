@@ -9,14 +9,14 @@ Aquest projecte permet desplegar els servidors dels mòduls de **Serveis de Xarx
 
 Definició:
 
-## Beneficis de la Integració Contínua:
+### Beneficis de la Integració Contínua:
 
 * Reducció de conflictes d'integració.
 *Detecció ràpida d'errors.
 * Millora de la qualitat del codi.
 * Acceleració del temps de lliurament.
 
-## Fases de la Integració Contínua amb docker
+### Fases de la Integració Contínua amb docker
 Les fases de la integració contínua (IC) aprofita les característiques de contenidors de Docker i assegurar una implementació eficient i reproduïble. Aquí tens les fases comunes en la IC amb Docker:
 
 1. Desenvolupament Local:
