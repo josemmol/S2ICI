@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dns-hospitalbinissalem:
+    build:
+      context: ..
+      dockerfile: dns.Dockerfile
+    container_name: dns-dck-hospitalbinissalem
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+    volumes:
+      - ./etc/bind:/etc/bind:rw
