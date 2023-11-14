@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  dns-hospitalbinissalem:
+    build:
+      context: ..
+      dockerfile: dhcp.Dockerfile
+    container_name: dhcp-dck-hospitalbinissalem
+

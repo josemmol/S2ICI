@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  dns-quirofans:
+    build:
+      context: ..
+      dockerfile: dns.Dockerfile
+    container_name: dns-dck-quirofans
+    ports:
+# Perque el servei funcioni s'han de desactiar el systemd-resolved per aixo s'han d'executar les seguents instruccions.
+# systemctl stop systemd-resolved
+# systemctl disable systemd-resolved
+      - 53:53/udp
+      - 53:53/tcp
+    volumes:
+      - ./etc/bind:/etc/bind:rw

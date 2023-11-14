@@ -4,13 +4,13 @@ FROM ubuntu:22.04
 
 # Iniciam la instalacio del servei bind9
 RUN apt-get update -y && \
-    apt install bind9 -y
+    apt install ???? -y
 
 ## Ejecucio de les instruccions per arrancar el contenidor
 # Montam les carpetes persistents
 VOLUME /etc/bind
 CMD ["named", "-g"]
 
-# Exposam el port utilizat
-EXPOSE 53/udp
-EXPOSE 53/tcp
+# Exposam els port utilizats
+EXPOSE ??/udp
+EXPOSE ??/tcp
