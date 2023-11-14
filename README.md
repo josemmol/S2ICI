@@ -88,9 +88,8 @@ Les fases de la integració contínua (IC) aprofita les característiques de con
 
 `git add nom_fitxer`: Afegeix canvis d'un fitxer a l'àrea d'espera.
 
-`git commit -m "Missatge del commit"`:
-* Emmagatzema canvis a la història del repositori.
-* El missatge descriu els canvis realitzats.
+`git commit -m "Missatge del commit"`: Emmagatzema canvis a la història del repositori.
+> El missatge descriu els canvis realitzats.
 
 `git push origin branca`: Puja els canvis locals a una branca remota.
 
