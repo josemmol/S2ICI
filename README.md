@@ -1,4 +1,26 @@
-# S2ICI
+# s2i-ci
+## Index
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Introducció](#introducció)
+- [Integració continua](#integració-continua)
+   * [Què és la Integració Contínua?](#què-és-la-integració-contínua)
+   * [Beneficis de la Integració Contínua:](#beneficis-de-la-integració-contínua)
+   * [Fases de la Integració Contínua amb docker](#fases-de-la-integració-contínua-amb-docker)
+- [Control de Versions amb Git](#control-de-versions-amb-git)
+   * [Què és el Control de Versions?](#què-és-el-control-de-versions)
+   * [Beneficis del Control de Versions](#beneficis-del-control-de-versions)
+   * [Principals Conceptes de Git](#principals-conceptes-de-git)
+- [Instruccions Bàsiques amb Git](#instruccions-bàsiques-amb-git)
+- [Introducció a Docker](#introducció-a-docker)
+   * [Què és Docker?](#què-és-docker)
+   * [Beneficis de Docker](#beneficis-de-docker)
+   * [Components clau de Docker](#components-clau-de-docker)
+   * [Instruccions Bàsiques de Docker](#instruccions-bàsiques-de-docker)
+   * [Dockerfile](#dockerfile)
+   * [Docker compose](#docker-compose)
+
+<!-- TOC end -->
 
 ## Introducció
 
