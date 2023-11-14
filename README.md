@@ -61,12 +61,12 @@ Les fases de la integració contínua (IC) aprofita les característiques de con
 **Definició:** El control de versions és un sistema que registra els canvis en un fitxer o conjunt de fitxers al llarg del temps, de manera que es pugui accedir a versions específiques més endavant.
 
 ### Beneficis del Control de Versions
-* Històric: Seguiment detallat de canvis.
-* Col·laboració: Facilita el treball en equip.
-* Seguretat: Possibilitat de restaurar 
-* Distribuït: Cada col·laborador té una còpia local de tot el projecte.
-* Ràpid: Accés local i eficient a les versions.
-* Flexible: Adaptable a diferents fluxos de treball.
+* **Històric:** Seguiment detallat de canvis.
+* **Col·laboració:** Facilita el treball en equip.
+* **Seguretat:** Possibilitat de restaurar 
+* **Distribuït:** Cada col·laborador té una còpia local de tot el projecte.
+* **Ràpid:** Accés local i eficient a les versions.
+* **Flexible:** Adaptable a diferents fluxos de treball.
 
 ### Principals Conceptes de Git
 1. Repository (Repositori):
@@ -103,16 +103,16 @@ Les fases de la integració contínua (IC) aprofita les característiques de con
 Docker és una plataforma de codi obert dissenyada per a facilitar la creació, implementació i execució d'aplicacions en contenidors. Els contenidors permeten empaquetar una aplicació i totes les seves dependències en una única unitat, assegurant que s'executi de manera consistent en qualsevol entorn.
 
 ### Beneficis de Docker
-1. Portabilitat: Els contenidors són independents de l'entorn, la qual cosa facilita l'execució d'aplicacions en qualsevol màquina que tingui Docker instal·lat.
-1. Eficiència: Els contenidors comparteixen el sistema operatiu host i consumeixen menys recursos en comparació amb les màquines virtuals tradicionals.
-1. Escalabilitat: Docker permet escalar fàcilment aplicacions en agregar o llevar contenidors, segons les necessitats de càrrega de treball.
-1. Desenvolupament ràpid: Els contenidors permeten als desenvolupadors treballar en entorns aïllats, evitant problemes de compatibilitat entre entorns de desenvolupament i producció.
+1. **Portabilitat:** Els contenidors són independents de l'entorn, la qual cosa facilita l'execució d'aplicacions en qualsevol màquina que tingui Docker instal·lat.
+1. **Eficiència:** Els contenidors comparteixen el sistema operatiu host i consumeixen menys recursos en comparació amb les màquines virtuals tradicionals.
+1. **Escalabilitat:** Docker permet escalar fàcilment aplicacions en agregar o llevar contenidors, segons les necessitats de càrrega de treball.
+1. **Desenvolupament ràpid:** Els contenidors permeten als desenvolupadors treballar en entorns aïllats, evitant problemes de compatibilitat entre entorns de desenvolupament i producció.
 
 ### Components clau de Docker
-1. Docker Engine: És el component principal que facilita la creació i execució de contenidors. Inclou un servidor i una API que gestiona els contenidors.
-1. Docker Image: Una imatge és un paquet lleuger i executable que inclou el codi de l'aplicació, les seves dependències i qualsevol configuració necessària per a executar-se.
-1. Contenidor: Una instància executable d'una imatge. Els contenidors executen aplicacions de manera aïllada i comparteixen el kernel del sistema operatiu subjacent.
-1. Docker Hub: Un registre en línia que permet emmagatzemar i compartir imatges de Docker. També pots utilitzar repositoris privats per a gestionar les teves pròpies imatges.
+1. **Docker Engine:** És el component principal que facilita la creació i execució de contenidors. Inclou un servidor i una API que gestiona els contenidors.
+1. **Docker Image:** Una imatge és un paquet lleuger i executable que inclou el codi de l'aplicació, les seves dependències i qualsevol configuració necessària per a executar-se.
+1. **Contenidor:** Una instància executable d'una imatge. Els contenidors executen aplicacions de manera aïllada i comparteixen el kernel del sistema operatiu subjacent.
+1. **Docker Hub:** Un registre en línia que permet emmagatzemar i compartir imatges de Docker. També pots utilitzar repositoris privats per a gestionar les teves pròpies imatges.
 
 ### Instruccions Bàsiques de Docker
 `docker pull <nombre de imagen>`: Descàrrega una imatge de Docker des de Docker Hub.
