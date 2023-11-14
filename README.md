@@ -129,3 +129,89 @@ Docker és una plataforma de codi obert dissenyada per a facilitar la creació, 
 `docker start <ID del contenedor>`: Deté un contenidor en execució.
 
 `docker exec -it <ID del contenedor> /bin/bash`: Entrà a la consola del contenidor. 
+
+### Dockerfile
+
+Un Dockerfile és un script que conté un conjunt d'instruccions per a construir una imatge Docker. Les imatges del contenidor són paquets lleugers, independents i executables que inclouen tot el necessari per a executar un tros de programari. A continuació es mostra una estructura bàsica i una explicació d'un Dockerfile:
+
+```
+# Use an official base image. This example uses the official Node.js image from the Docker Hub.
+FROM node:14
+# Set the working directory inside the container. This will be the base directory for all subsequent commands.
+WORKDIR /app
+# Copy package.json and package-lock.json to the working directory.
+COPY package*.json ./
+# Install app dependencies.
+RUN npm install
+# Copy the application code to the working directory.
+COPY . .
+# Expose a port that the container will listen on. This does not publish the port, but documents its existence.
+EXPOSE 3000
+# Define environment variables.
+ENV NODE_ENV=production
+# Command to run the application. This is the entry point for the container.
+CMD ["npm", "start"]
+```
+
+Per a construir una imatge des d'aquest Dockerfile, deseu-la com a Dockerfile i executeu l'ordre següent al mateix directori:
+
+```
+docker build -t your-image-name .
+```
+Reemplaça el nom de la imatge amb el nom desitjat per a la imatge Docker. Després de construir la imatge, podeu executar un contenidor des d'ell utilitzant acoblador executa.
+
+### Docker compose
+Docker Compose és una eina per definir i executar aplicacions Docker multicontenidor. Permet definir els serveis, xarxes i volums en un sol fitxer, facilitant la gestió i el desplegament d'aplicacions complexes. Aquí hi ha un fitxer bàsic de Docker Compose amb comentaris que expliquen cada secció:
+
+```
+version: '3'  # Docker Compose version
+
+services:    # List of services/containers
+
+  web:       # Service named 'web'
+    image: nginx:alpine  # Docker image to use
+    ports:
+      - "8080:80"        # Port mapping (host:container)
+    volumes:
+      - ./html:/usr/share/nginx/html  # Mount local directory into the container
+
+  api:
+    image: your-api-image:latest  # Replace with your API image and tag
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # Named volume for persisting data
+
+volumes:
+  pgdata:  # Definition of the named volume
+```
+
+Per a utilitzar aquest fitxer Docker Compose, deseu-lo com a docker-compose.yml i executeu l'ordre següent al mateix directori:
+
+```
+docker-compose up
+```
+
+Aquesta ordre llegeix el fitxer docker-compose.yml, crea els serveis definits i inicia els contenidors. 
+
+Per aturar i eliminar contenidors, utilitzau:
+
+```
+docker-compose down
+```
+
+Per aturar i eliminar contenidors i les seves imatges, utilitzau:
+
+
+Aquest és un exemple bàsic, i pots personalitzar-lo en funció dels requisits de la teva aplicació.
+
+
