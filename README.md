@@ -114,7 +114,7 @@ Docker és una plataforma de codi obert dissenyada per a facilitar la creació, 
 1. Contenidor: Una instància executable d'una imatge. Els contenidors executen aplicacions de manera aïllada i comparteixen el kernel del sistema operatiu subjacent.
 1. Docker Hub: Un registre en línia que permet emmagatzemar i compartir imatges de Docker. També pots utilitzar repositoris privats per a gestionar les teves pròpies imatges.
 
-###Instruccions Bàsiques de Docker
+### Instruccions Bàsiques de Docker
 `docker pull <nombre de imagen>`: Descàrrega una imatge de Docker des de Docker Hub.
 
 `docker build -t <nombre de imagen> .`: Construeix una imatge a partir d'un Dockerfile en el directori actual.
