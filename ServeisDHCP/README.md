@@ -47,5 +47,5 @@ Els serveis DHCP estarà format per tres dockers:
 * dk-kea-DHCP-RELAY-01
 * dk-kea-DHCP-RELAY-02
 
-Al docker *dk-kea-DHCP-SERVER-01* hi haurà la configuració del servei DHCP per a les tres subxarxes *Gestió infraestructura*, *Quiròfans* i *Ambulatori*
+Al docker *dk-kea-DHCP-SERVER-01* hi haurà la configuració del servei DHCP per a les tres subxarxes *Gestió infraestructura*, *Quiròfans* i *Ambulatori*.
 
