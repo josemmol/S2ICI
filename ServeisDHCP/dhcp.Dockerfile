@@ -12,5 +12,4 @@ VOLUME /etc/bind
 CMD ["named", "-g"]
 
 # Exposam els port utilizats
-EXPOSE ??/udp
-EXPOSE ??/tcp
+EXPOSE 67/udp
