@@ -8,7 +8,7 @@ RUN apt-get update -y && \
 
 ## Ejecucio de les instruccions per arrancar el contenidor
 # Montam les carpetes persistents
-VOLUME /etc/bind
+VOLUME /etc/kea
 CMD ["named", "-g"]
 
 # Exposam els port utilizats
