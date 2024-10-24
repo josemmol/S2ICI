@@ -5,5 +5,10 @@ services:
     build:
       context: ..
       dockerfile: dhcp.Dockerfile
-    container_name: dhcp-dck-hospitalbinissalem
+    container_name: dk-kea-DHCP-SERVER01
+    ports:
+      - 67:67/udp
+      - 8000:8000/tcp
+    volumes:
+      - ./etc/kea:/etc/kea:rw
 
