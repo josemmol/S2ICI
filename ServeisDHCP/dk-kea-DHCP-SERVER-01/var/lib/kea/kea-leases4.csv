@@ -1,0 +1,2 @@
+address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostname,state,user_context,pool_id
+10.18.159.70,bc:24:11:10:c2:e0,ff:63:4a:fc:49:00:02:00:00:ab:11:ca:0b:3a:e7:92:cc:3a:6f,600,1729898153,1,0,0,sv-radius-01,0,,0
