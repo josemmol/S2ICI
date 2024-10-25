@@ -1,2 +1,5 @@
 address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostname,state,user_context,pool_id
 10.18.159.70,bc:24:11:10:c2:e0,ff:63:4a:fc:49:00:02:00:00:ab:11:ca:0b:3a:e7:92:cc:3a:6f,600,1729898153,1,0,0,sv-radius-01,0,,0
+10.18.159.70,bc:24:11:10:c2:e0,ff:63:4a:fc:49:00:02:00:00:ab:11:ca:0b:3a:e7:92:cc:3a:6f,600,1729898153,1,0,0,,2,,0
+10.18.159.76,bc:24:11:30:34:15,ff:3c:ba:d4:ba:00:02:00:00:ab:11:1d:4e:b6:67:b5:ab:bd:e1,600,1729901051,1,0,0,pc-lab-03,0,,0
+10.18.159.70,bc:24:11:10:c2:e0,ff:63:4a:fc:49:00:02:00:00:ab:11:ca:0b:3a:e7:92:cc:3a:6f,600,1729901059,1,0,0,sv-radius-01,0,,0
