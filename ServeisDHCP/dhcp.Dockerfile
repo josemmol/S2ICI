@@ -12,12 +12,7 @@ RUN apt-get update -y && \
 
 ## Execucio de les instruccions per arrancar el contenidor
 # Montam les carpetes persistents
-<<<<<<< HEAD
 VOLUME ["/etc/kea", "/etc/suvervisor", "/var/lib/kea"]
-=======
-VOLUME /etc/kea
-CMD ["named", "-g"]
->>>>>>> 7a5059d1117665309b8397b9014905ba88100419
 
 # Exposam els port utilizats
 EXPOSE 8000-8001/tcp 67/tcp 67/udp
