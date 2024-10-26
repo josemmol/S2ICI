@@ -38,6 +38,7 @@ Les següents subxarxes tindran servei d'adreçament dinàmic amb DHCP pels serv
 * *Adreça IP servidor DHCP*: 10.18.159.66
 * *Adreces IPs servidors DNS*: 8.8.8.8, 8.8.4.4
 
+
 Els serveis de DHCP està implementat a partir de contenidors dockers aquests contenidors es podran desplegar a partir dels fitxers de configuració guardats en aquest repositori.
 
 Els contenidors dockers es desplegaran a partir d'una imatge d'Ubuntu 22.04 i el servei que s’instal·larà seran el de isc-kea.
@@ -49,3 +50,9 @@ Els serveis DHCP estarà format per tres dockers:
 
 Al docker *dk-kea-DHCP-SERVER-01* hi haurà la configuració del servei DHCP per a les tres subxarxes *Gestió infraestructura*, *Quiròfans* i *Ambulatori*.
 
+## Referències
+Per a configurar el contenidor amb el servei DHCP amb KEA s'ha utilitzat les següents referències:
+
+https://gitlab.isc.org/isc-projects/kea-docker/
+
+http://supervisord.org/
