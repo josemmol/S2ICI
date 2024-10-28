@@ -34,7 +34,7 @@ Aquest projecte permet desplegar els servidors dels mòduls de **Serveis de Xarx
 ### Beneficis de la Integració Contínua:
 
 * Reducció de conflictes d'integració.
-*Detecció ràpida d'errors.
+* Detecció ràpida d'errors.
 * Millora de la qualitat del codi.
 * Acceleració del temps de lliurament.
 
