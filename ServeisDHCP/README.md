@@ -77,6 +77,8 @@ ping 10.18.159.66
 
 Ara simplement crea una màquina virtual amb **VirtuaBox** o **VMWare Workstation** que estigui en mode bridge a la interfície **eth0** i que el sistema operatiu tingui la interfície configurada en mode DHCP.
 
+> Nota: Per fer que aquesta configuració persisteixi després d’un reinici, pots afegir la configuració a **/etc/network/interfaces** o crear una regla **systemd**.
+
 ## Referències
 Per a configurar el contenidor amb el servei DHCP amb KEA s'ha utilitzat les següents referències:
 
