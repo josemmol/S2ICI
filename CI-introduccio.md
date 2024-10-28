@@ -24,7 +24,7 @@
 
 ## Introducció
 
-Aquest projecte permet desplegar els servidors dels mòduls de **Serveis de Xarxes i Internet** i **Seguretat i Alta Disponibilitat** utilitzant **dockers** i tècniques de **Integració Continua (CI)**
+Aquest projecte permet desplegar els servidors dels mòduls de **Serveis de Xarxes i Internet** i **Seguretat i Alta Disponibilitat** utilitzant **dockers** i tècniques d’**Integració Continua (CI)**
 
 ## Integració contínua
 ### Què és la Integració Contínua?
