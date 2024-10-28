@@ -50,8 +50,8 @@ Els serveis DHCP estarà format per tres dockers:
 
 Al docker *dk-kea-DHCP-SERVER-01* hi haurà la configuració del servei DHCP per a les tres subxarxes *Gestió infraestructura*, *Quiròfans* i *Ambulatori*.
 
-## Preparació de local
-Per poder fer les proves en local el que s’ha de fer és tenir el docker instal·lat, a més a més per poder comprovar el funcionament del servei DHCP es crearà una interfície ficticia seguin les següents intruccions:
+## Preparació de l’ordinador local
+Per poder fer les proves en local el que s’ha de fer és tenir el docker instal·lat, a més a més per poder comprovar el funcionament del servei DHCP es crearà una interfície fictícia seguint les següents passes:
 
 Comprovar que el mòdul del kernel **dummy** està carregat
 ```
