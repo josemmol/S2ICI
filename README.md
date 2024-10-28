@@ -15,9 +15,9 @@ En aquest respositori trobarem una carpeta per cada servei en concret:
 
 A cada directori es troba un Dockerfile que descriu la imatge utilitzada per cada un dels serveis. A més a més podem trobar un subdirectori per cada servidor que integra el servei, en aquest subdirectori es trobaren els docker-compose.yml més els fitxers de configuració del servei.
 
-## Preparació de l’anfitrió
+## Preparació de l’amfitrió
 ### Instal·lació docker
-Abans de desplegar els serveis dins un docker el que s'ha de fer la instal·lació del propi docker a l'anfitrio per fer això podem seguir els següents tutorials depenent del sistema.
+Abans de desplegar els serveis dins un docker el que s'ha de fer la instal·lació del propi docker a l’amfitrió per fer això podem seguir els següents tutorials depenent del sistema.
 
 https://docs.docker.com/engine/install/ubuntu/
 

@@ -50,6 +50,33 @@ Els serveis DHCP estarà format per tres dockers:
 
 Al docker *dk-kea-DHCP-SERVER-01* hi haurà la configuració del servei DHCP per a les tres subxarxes *Gestió infraestructura*, *Quiròfans* i *Ambulatori*.
 
+## Preparació de local
+Per poder fer les proves en local el que s’ha de fer és tenir el docker instal·lat, a més a més per poder comprovar el funcionament del servei DHCP es crearà una interfície ficticia seguin les següents intruccions:
+
+Comprovar que el mòdul del kernel **dummy** està carregat
+```
+lsmod | grep dummy
+```
+
+Si no està carregat 
+```
+sudo modprobe dummy
+```
+
+Per crear la intèrficie ficticia i assignar-li una adreça IP s'han d'executar les següents intruccions:
+```
+sudo ip link add eth0 type dummy
+sudo ip address add 10.18.159.66/27 dev eth0
+sudo ip link set eth0 up
+```
+
+Per comprovar si està activat simplament fer un ping:
+```
+ping 10.18.159.66
+```
+
+Ara simplement crea una màquina virtual amb **VirtuaBox** o **VMWare Workstation** que estigui en mode bridge a la interfície **eth0** i que el sistema operatiu tingui la interfície configurada en mode DHCP.
+
 ## Referències
 Per a configurar el contenidor amb el servei DHCP amb KEA s'ha utilitzat les següents referències:
 
